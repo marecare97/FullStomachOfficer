@@ -1,0 +1,14 @@
+strings:
+  inputs: FSO/UILayer/Resources/en.strings
+  outputs:
+    - templateName: structured-swift5
+      output: FSO/UILayer/Resources/Generated/Strings.swift
+      params:
+          enumName: TK
+xcassets:
+  inputs:
+    - FSO/UILayer/Resources/Images.xcassets
+    - FSO/UILayer/Resources/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: FSO/UILayer/Resources/Generated/Assets.swift
