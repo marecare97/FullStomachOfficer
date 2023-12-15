@@ -12,9 +12,21 @@ typealias Img = Asset.Images
 
 @main
 struct FSOApp: App {
+    
+    @StateObject var mainCoordinator = MainCoordinator()
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack(path: $mainCoordinator.path) {
+                rootView
+                    .navigationDestination(for: Route.self) { route in
+                        route.view
+                    }
+            }
+            .environmentObject(mainCoordinator)
         }
+    }
+    
+    var rootView: some View {
+        return LoginView<MainCoordinator>()
     }
 }

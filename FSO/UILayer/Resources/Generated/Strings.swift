@@ -15,6 +15,16 @@ internal enum TK {
     internal static let email = TK.tr("en", "forgotPass.email", fallback: "Email")
     /// Restore your password
     internal static let restorePass = TK.tr("en", "forgotPass.restorePass", fallback: "Restore your password")
+
+  internal enum DashBoard {
+    /// Hello
+    internal static let greeting = TK.tr("en", "dashBoard.greeting", fallback: "Hello")
+    internal enum Orders {
+      /// Order now
+      internal static let addButton = TK.tr("en", "dashBoard.orders.addButton", fallback: "Order now")
+      /// Orders
+      internal static let title = TK.tr("en", "dashBoard.orders.title", fallback: "Orders")
+    }
   }
   internal enum Login {
     /// Email

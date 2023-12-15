@@ -14,3 +14,7 @@
 
 "forgotPass.email" = "Email";
 "forgotPass.restorePass" = "Restore your password";
+
+"dashBoard.greeting" = "Hello";
+"dashBoard.orders.addButton" = "Order now";
+"dashBoard.orders.title" = "Orders";
