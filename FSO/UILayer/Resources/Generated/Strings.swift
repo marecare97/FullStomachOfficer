@@ -10,6 +10,16 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum TK {
+  internal enum DashBoard {
+    /// Hello
+    internal static let greeting = TK.tr("en", "dashBoard.greeting", fallback: "Hello")
+    internal enum Orders {
+      /// Order now
+      internal static let addButton = TK.tr("en", "dashBoard.orders.addButton", fallback: "Order now")
+      /// Orders
+      internal static let title = TK.tr("en", "dashBoard.orders.title", fallback: "Orders")
+    }
+  }
   internal enum Login {
     /// Email
     internal static let email = TK.tr("en", "login.email", fallback: "Email")

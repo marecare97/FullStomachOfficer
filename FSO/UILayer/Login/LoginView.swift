@@ -7,8 +7,12 @@
 
 import SwiftUI
 
-struct LoginView: View {
+typealias LoginNavigationProtocol = (Coordinator &
+                                     LoginNavigation)
+
+struct LoginView<C>: View where C: LoginNavigationProtocol {
     @State var imageSize = 7000.0
+    @EnvironmentObject var coordinator: C
     @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
@@ -23,7 +27,12 @@ struct LoginView: View {
             loginTextFields
             
             Button(action: {
-                print("tap")
+                withAnimation(.easeIn(duration: 3)) {
+                    imageSize = 997000.0
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    coordinator.goToDashBoard()
+                }
             }) {
                 LoginButton()
             }
@@ -32,6 +41,7 @@ struct LoginView: View {
                 .font(.footnote)
                 .foregroundColor(GEC.appBlack.swiftUIColor)
         }
+        .navigationBarBackButtonHidden()
         .onAppear {
             withAnimation(.smooth(duration: 1)) {
                 imageSize = 150
@@ -61,7 +71,7 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView<MainCoordinator>()
 }
 
 struct LoginButton: View {
