@@ -12,3 +12,4 @@ xcassets:
   outputs:
     - templateName: swift5
       output: FSO/UILayer/Resources/Generated/Assets.swift
+

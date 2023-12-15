@@ -17,7 +17,6 @@
 		F63844662B29BB0E0011D294 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63844652B29BB0E0011D294 /* Session.swift */; };
 		F63844682B29BB840011D294 /* SessionProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63844672B29BB840011D294 /* SessionProvidable.swift */; };
 		F638446A2B29BBE30011D294 /* UserDefaults in Resources */ = {isa = PBXBuildFile; fileRef = F63844692B29BBE30011D294 /* UserDefaults */; };
-		F638446E2B29C15B0011D294 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = F638446D2B29C15B0011D294 /* swiftgen.yml */; };
 		F63844722B29C1E10011D294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63844712B29C1E10011D294 /* Images.xcassets */; };
 		F63844742B29C2010011D294 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63844732B29C2010011D294 /* Colors.xcassets */; };
 		F63844762B29C24B0011D294 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = F63844752B29C24B0011D294 /* en.strings */; };
@@ -26,6 +25,10 @@
 		F638447F2B29EFDF0011D294 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638447D2B29EFDF0011D294 /* Strings.swift */; };
 		F63844802B29EFDF0011D294 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638447E2B29EFDF0011D294 /* Assets.swift */; };
 		F63844822B29F3F70011D294 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63844812B29F3F70011D294 /* LoginViewModel.swift */; };
+		F66EF2102B2C5A5200B39C4F /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = F66EF20F2B2C5A5200B39C4F /* swiftgen.yml */; };
+		F66EF2132B2C5C6300B39C4F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2122B2C5C6300B39C4F /* ForgotPasswordView.swift */; };
+		F66EF2152B2C5C7900B39C4F /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */; };
+		F66EF2172B2C5E2800B39C4F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2162B2C5E2800B39C4F /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +62,6 @@
 		F63844652B29BB0E0011D294 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F63844672B29BB840011D294 /* SessionProvidable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionProvidable.swift; sourceTree = "<group>"; };
 		F63844692B29BBE30011D294 /* UserDefaults */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserDefaults; sourceTree = "<group>"; };
-		F638446D2B29C15B0011D294 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		F63844712B29C1E10011D294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F63844732B29C2010011D294 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F63844752B29C24B0011D294 /* en.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
@@ -69,6 +71,10 @@
 		F638447E2B29EFDF0011D294 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F63844812B29F3F70011D294 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F63844832B29FAA30011D294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F66EF20F2B2C5A5200B39C4F /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F66EF2122B2C5C6300B39C4F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		F66EF2162B2C5E2800B39C4F /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 		F638442A2B29B6760011D294 = {
 			isa = PBXGroup;
 			children = (
-				F638446D2B29C15B0011D294 /* swiftgen.yml */,
+				F66EF20F2B2C5A5200B39C4F /* swiftgen.yml */,
 				F63844352B29B6760011D294 /* FSO */,
 				F63844462B29B6780011D294 /* FSOTests */,
 				F63844502B29B6780011D294 /* FSOUITests */,
@@ -184,8 +190,9 @@
 		F63844632B29B8F70011D294 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
-				F638447A2B29EBB00011D294 /* Components */,
 				F63844772B29E93A0011D294 /* Login */,
+				F66EF2112B2C5BC700B39C4F /* ForgotPassword */,
+				F638447A2B29EBB00011D294 /* Components */,
 				F638446F2B29C1930011D294 /* Resources */,
 			);
 			path = UILayer;
@@ -233,8 +240,18 @@
 			isa = PBXGroup;
 			children = (
 				F638447B2B29EBF80011D294 /* PrimaryTextFieldStyle.swift */,
+				F66EF2162B2C5E2800B39C4F /* PrimaryButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F66EF2112B2C5BC700B39C4F /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F66EF2122B2C5C6300B39C4F /* ForgotPasswordView.swift */,
+				F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F638443E2B29B6780011D294 /* Preview Assets.xcassets in Resources */,
+				F66EF2102B2C5A5200B39C4F /* swiftgen.yml in Resources */,
 				F63844722B29C1E10011D294 /* Images.xcassets in Resources */,
 				F638446A2B29BBE30011D294 /* UserDefaults in Resources */,
 				F63844762B29C24B0011D294 /* en.strings in Resources */,
 				F63844742B29C2010011D294 /* Colors.xcassets in Resources */,
 				F638443B2B29B6780011D294 /* Assets.xcassets in Resources */,
-				F638446E2B29C15B0011D294 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +398,11 @@
 				F63844682B29BB840011D294 /* SessionProvidable.swift in Sources */,
 				F63844792B29EB4C0011D294 /* LoginView.swift in Sources */,
 				F638447C2B29EBF80011D294 /* PrimaryTextFieldStyle.swift in Sources */,
+				F66EF2172B2C5E2800B39C4F /* PrimaryButton.swift in Sources */,
+				F66EF2152B2C5C7900B39C4F /* ForgotPasswordViewModel.swift in Sources */,
 				F63844662B29BB0E0011D294 /* Session.swift in Sources */,
 				F638447F2B29EFDF0011D294 /* Strings.swift in Sources */,
+				F66EF2132B2C5C6300B39C4F /* ForgotPasswordView.swift in Sources */,
 				F63844822B29F3F70011D294 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,12 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum TK {
+  internal enum ForgotPass {
+    /// Email
+    internal static let email = TK.tr("en", "forgotPass.email", fallback: "Email")
+    /// Restore your password
+    internal static let restorePass = TK.tr("en", "forgotPass.restorePass", fallback: "Restore your password")
+  }
   internal enum Login {
     /// Email
     internal static let email = TK.tr("en", "login.email", fallback: "Email")

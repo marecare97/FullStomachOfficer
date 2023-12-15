@@ -11,3 +11,6 @@
 "login.password" = "Password";
 "login.login" = "LOGIN";
 "login.forgotPassword" = "Forgot password?";
+
+"forgotPass.email" = "Email";
+"forgotPass.restorePass" = "Restore your password";

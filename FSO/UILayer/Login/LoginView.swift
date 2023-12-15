@@ -25,7 +25,7 @@ struct LoginView: View {
             Button(action: {
                 print("tap")
             }) {
-                LoginButton()
+                PrimaryButton(buttonTitle: TK.Login.login)
             }
             
             Text(TK.Login.forgotPassword)
@@ -62,16 +62,4 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
-}
-
-struct LoginButton: View {
-    var body: some View {
-        Text(TK.Login.login)
-            .font(.headline)
-            .foregroundColor(GEC.secondaryGreen.swiftUIColor)
-            .padding()
-            .frame(width: 250, height: 60)
-            .background(GEC.appBlack.swiftUIColor)
-            .cornerRadius(35)
-    }
 }
