@@ -18,3 +18,10 @@
 "dashBoard.greeting" = "Hello";
 "dashBoard.orders.addButton" = "Order now";
 "dashBoard.orders.title" = "Orders";
+
+"profile.name" = "Name";
+"profile.lastName" = "Last name";
+"profile.email" = "Email";
+"profile.office" = "Office";
+"profile.notifications" = "Notifications";
+"profile.save" = "Save";

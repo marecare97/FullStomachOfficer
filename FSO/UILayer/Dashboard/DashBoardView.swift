@@ -7,10 +7,14 @@
 
 import SwiftUI
 
-struct DashBoardView: View {
+typealias DashBoardNavigationProtocol = (Coordinator & DashboardNavigation)
+
+struct DashBoardView<C>: View where C: DashBoardNavigationProtocol {
     
     @State var imageSize = 77000.0
+    @EnvironmentObject var coordinator: C
     @StateObject var viewModel = DashBoardViewModel()
+    
     var body: some View {
         VStack {
             header
@@ -40,19 +44,22 @@ struct DashBoardView: View {
                 .frame(maxHeight: 80)
                 .foregroundColor(.white)
                 .shadow(color: GEC.appOrange.swiftUIColor.opacity(0.1), radius: 3, x: 0, y: 10)
-        HStack {
-            Text(TK.DashBoard.greeting + " " + "Matko")
-                .font(.title)
-                .foregroundColor(GEC.primaryGreen.swiftUIColor)
-            
-            Spacer()
-            
-            Img.fsoLogo.swiftUIImage
-                .resizable()
-                .frame(width: imageSize, height: imageSize)
+            HStack {
+                Text(TK.DashBoard.greeting + " " + "Matko")
+                    .font(.title)
+                    .foregroundColor(GEC.primaryGreen.swiftUIColor)
+                    .onTapGesture {
+                        coordinator.goToProfileView()
+                    }
+                
+                Spacer()
+                
+                Img.fsoLogo.swiftUIImage
+                    .resizable()
+                    .frame(width: imageSize, height: imageSize)
+            }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
-    }
     }
     
     var button: some View {
@@ -92,5 +99,5 @@ struct DashBoardView: View {
 }
 
 #Preview {
-    DashBoardView()
+    DashBoardView<MainCoordinator>()
 }

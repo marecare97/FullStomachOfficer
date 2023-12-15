@@ -14,5 +14,5 @@ extension MainCoordinator: LoginNavigation {
     
     func goToForgotPasswordView() {
         path.append(Route.forgotPassword)
-    } 
+    }
 }

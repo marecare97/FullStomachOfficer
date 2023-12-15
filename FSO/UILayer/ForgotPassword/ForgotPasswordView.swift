@@ -27,6 +27,7 @@ struct ForgotPasswordView: View {
                 PrimaryButton(buttonTitle: TK.ForgotPass.restorePass)
             }
         }
+        .endTextEditing()
     }
 }
 

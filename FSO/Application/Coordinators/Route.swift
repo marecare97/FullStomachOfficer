@@ -13,6 +13,7 @@ enum Route: Identifiable {
     
     case dashBoard
     case forgotPassword
+    case profile
 }
 
 extension Route {
@@ -21,7 +22,9 @@ extension Route {
         case .dashBoard:
             DashBoardView()
         case .forgotPassword:
-            ContentView()
+            ForgotPasswordView()
+        case .profile:
+            ProfileView()
         }
     }
 }

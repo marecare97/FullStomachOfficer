@@ -38,6 +38,11 @@
 		F66EF2132B2C5C6300B39C4F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2122B2C5C6300B39C4F /* ForgotPasswordView.swift */; };
 		F66EF2152B2C5C7900B39C4F /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */; };
 		F66EF2172B2C5E2800B39C4F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2162B2C5E2800B39C4F /* PrimaryButton.swift */; };
+		F66EF21A2B2C807000B39C4F /* View+TextFieldDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2192B2C807000B39C4F /* View+TextFieldDismiss.swift */; };
+		F66EF21D2B2C85A800B39C4F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF21C2B2C85A800B39C4F /* ProfileView.swift */; };
+		F66EF21F2B2C85B200B39C4F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF21E2B2C85B200B39C4F /* ProfileViewModel.swift */; };
+		F66EF2212B2C8D7000B39C4F /* DashboardNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2202B2C8D7000B39C4F /* DashboardNavigation.swift */; };
+		F66EF2232B2C8F4A00B39C4F /* MainCoordinator+DashboardNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EF2222B2C8F4A00B39C4F /* MainCoordinator+DashboardNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,11 @@
 		F66EF2122B2C5C6300B39C4F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		F66EF2162B2C5E2800B39C4F /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F66EF2192B2C807000B39C4F /* View+TextFieldDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextFieldDismiss.swift"; sourceTree = "<group>"; };
+		F66EF21C2B2C85A800B39C4F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F66EF21E2B2C85B200B39C4F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F66EF2202B2C8D7000B39C4F /* DashboardNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigation.swift; sourceTree = "<group>"; };
+		F66EF2222B2C8F4A00B39C4F /* MainCoordinator+DashboardNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+DashboardNavigation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +130,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		604B6C912B2B318D00F90042 /* DashBoard */ = {
+		604B6C912B2B318D00F90042 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
 				604B6C922B2B31A600F90042 /* DashBoardViewModel.swift */,
 				604B6C942B2B31B500F90042 /* DashBoardView.swift */,
 			);
-			path = DashBoard;
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		604B6C982B2B554400F90042 /* Coordinators */ = {
@@ -137,6 +147,8 @@
 				604B6C9D2B2B9E0300F90042 /* Route.swift */,
 				604B6C9F2B2B9EFF00F90042 /* LoginNavigation.swift */,
 				604B6CA12B2B9F7C00F90042 /* MainCoordinator+LoginNavigation.swift */,
+				F66EF2222B2C8F4A00B39C4F /* MainCoordinator+DashboardNavigation.swift */,
+				F66EF2202B2C8D7000B39C4F /* DashboardNavigation.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -226,13 +238,6 @@
 			path = DataLayer;
 			sourceTree = "<group>";
 		};
-		F63844612B29B8440011D294 /* DomainLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DomainLayer;
-			sourceTree = "<group>";
-		};
 		F63844622B29B85E0011D294 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,11 +251,12 @@
 		F63844632B29B8F70011D294 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
-				604B6C912B2B318D00F90042 /* DashBoard */,
-				F638447A2B29EBB00011D294 /* Components */,
+				F66EF21B2B2C859A00B39C4F /* Profile */,
 				F63844772B29E93A0011D294 /* Login */,
 				F66EF2112B2C5BC700B39C4F /* ForgotPassword */,
+				604B6C912B2B318D00F90042 /* Dashboard */,
 				F638447A2B29EBB00011D294 /* Components */,
+				F66EF2182B2C803300B39C4F /* Extensions */,
 				F638446F2B29C1930011D294 /* Resources */,
 			);
 			path = UILayer;
@@ -311,6 +317,23 @@
 				F66EF2142B2C5C7900B39C4F /* ForgotPasswordViewModel.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		F66EF2182B2C803300B39C4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F66EF2192B2C807000B39C4F /* View+TextFieldDismiss.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F66EF21B2B2C859A00B39C4F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F66EF21C2B2C85A800B39C4F /* ProfileView.swift */,
+				F66EF21E2B2C85B200B39C4F /* ProfileViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +480,8 @@
 				F63844802B29EFDF0011D294 /* Assets.swift in Sources */,
 				F63844682B29BB840011D294 /* SessionProvidable.swift in Sources */,
 				F63844792B29EB4C0011D294 /* LoginView.swift in Sources */,
+				F66EF2232B2C8F4A00B39C4F /* MainCoordinator+DashboardNavigation.swift in Sources */,
+				F66EF21F2B2C85B200B39C4F /* ProfileViewModel.swift in Sources */,
 				604B6C9E2B2B9E0300F90042 /* Route.swift in Sources */,
 				604B6CA62B2BA87F00F90042 /* Order.swift in Sources */,
 				604B6C932B2B31A600F90042 /* DashBoardViewModel.swift in Sources */,
@@ -464,10 +489,13 @@
 				F638447C2B29EBF80011D294 /* PrimaryTextFieldStyle.swift in Sources */,
 				F66EF2172B2C5E2800B39C4F /* PrimaryButton.swift in Sources */,
 				F66EF2152B2C5C7900B39C4F /* ForgotPasswordViewModel.swift in Sources */,
+				F66EF21A2B2C807000B39C4F /* View+TextFieldDismiss.swift in Sources */,
 				604B6C9A2B2B555800F90042 /* Coordinator.swift in Sources */,
 				F63844662B29BB0E0011D294 /* Session.swift in Sources */,
 				604B6C9C2B2B556D00F90042 /* MainCoordinator.swift in Sources */,
+				F66EF21D2B2C85A800B39C4F /* ProfileView.swift in Sources */,
 				604B6CA02B2B9EFF00F90042 /* LoginNavigation.swift in Sources */,
+				F66EF2212B2C8D7000B39C4F /* DashboardNavigation.swift in Sources */,
 				604B6CA22B2B9F7C00F90042 /* MainCoordinator+LoginNavigation.swift in Sources */,
 				F638447F2B29EFDF0011D294 /* Strings.swift in Sources */,
 				F66EF2132B2C5C6300B39C4F /* ForgotPasswordView.swift in Sources */,
@@ -635,7 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FSO/Preview Content\"";
-				DEVELOPMENT_TEAM = U478S96U6Y;
+				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FSO/Info.plist;
@@ -653,7 +681,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "markos-Friends.FSO";
+				PRODUCT_BUNDLE_IDENTIFIER = markos.FSO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -672,7 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FSO/Preview Content\"";
-				DEVELOPMENT_TEAM = U478S96U6Y;
+				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FSO/Info.plist;
@@ -690,7 +718,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "markos-Friends.FSO";
+				PRODUCT_BUNDLE_IDENTIFIER = markos.FSO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

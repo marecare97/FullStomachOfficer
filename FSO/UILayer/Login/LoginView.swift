@@ -40,8 +40,12 @@ struct LoginView<C>: View where C: LoginNavigationProtocol {
             Text(TK.Login.forgotPassword)
                 .font(.footnote)
                 .foregroundColor(GEC.appBlack.swiftUIColor)
+                .onTapGesture {
+                    coordinator.goToForgotPasswordView()
+                }
         }
         .navigationBarBackButtonHidden()
+        .endTextEditing()
         .onAppear {
             withAnimation(.smooth(duration: 1)) {
                 imageSize = 150
